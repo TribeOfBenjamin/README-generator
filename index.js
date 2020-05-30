@@ -46,8 +46,8 @@ inquirer
     ])
     .then(function(answers) {
 
-        return console.log(`
-        ![GitHub followers](https://img.shields.io/github/followers/0?label=Follow&style=social)
+        const readMe = 
+        `![GitHub followers](https://img.shields.io/github/followers/0?label=Follow&style=social)
         
         # ${answers.title}
         ${answers.description}
@@ -77,9 +77,16 @@ inquirer
         ${answers.tests}
         
         ## Questions
-        ${answers.questions}
-            
-            
-            
-            `);
+        ${answers.questions}`;
+
+        fs.writeFile("README1.md", readMe, function(err) {
+
+            if (err) {
+                return console.log(err);
+            }
+
+            console.log("README.md successfully generated!")
+        })
+
+        return console.log(readMe);
     });
