@@ -6,42 +6,47 @@ inquirer
         {
             type: "input",
             name: "title",
-            message: ""
+            message: "The title of your project:"
         },
         {
             type: "input",
             name: "description",
-            message: ""
+            message: "A description of your project:"
         },
         {
             type: "input",
             name: "installation",
-            message: ""
+            message: "The steps required to install your project:"
         },
         {
             type: "input",
             name: "usage",
-            message: ""
+            message: "Instructions and examples on how to use the project:"
         },
         {
             type: "input",
             name: "license",
-            message: ""
+            message: "What license you are using:"
+        },
+        {
+            type: "input",
+            name: "author",
+            message: "Your name:"
         },
         {
             type: "input",
             name: "contributing",
-            message: ""
+            message: "What others should know to contribute to the project:"
         },
         {
             type: "input",
             name: "tests",
-            message: ""
+            message: "Tests for your project:"
         },
         {
             type: "input",
             name: "questions",
-            message: ""
+            message: "Answers to common questions others might have:"
         },
     ])
     .then(function(answers) {
@@ -62,14 +67,19 @@ inquirer
         - Questions
             
         ## Installation
-        ${answers.installation}
+        \`${answers.installation}\`
 
         ## Usage
-        ${answers.usage}
+        \`${answers.usage}\`
 
         ## License
-        ${answers.license}
+        This project is ${answers.license} licensed.
 
+        ## Author
+        ${answers.author}
+        - GitHub Email
+        GitHub Profile Picture~!~
+        
         ## Contributing
         ${answers.contributing}
 
