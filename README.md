@@ -18,8 +18,8 @@ I created a README generator which prompts the user for the information necessar
 
 ## Usage
 `node index.js`
-!(assets/images/run.png)
-!(assets/iamges/result.png)
+![program running](assets/images/run.png)
+![program result](assets/images/result.png)
 
 ## License
 This project is MIT licensed.
