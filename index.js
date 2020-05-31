@@ -1,5 +1,18 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
+const axios = require("axios");
+
+//function gitHubEmail() {
+
+//    axios
+//    .get("https://api.github.com/users/" + answers.gitHubID)
+//    .then(function(result) {
+
+//    console.log(result);
+//});
+//  }
+
+//gitHubEmail();
 
 inquirer
     .prompt([
@@ -32,6 +45,11 @@ inquirer
             type: "input",
             name: "author",
             message: "Your name:"
+        },
+        {
+            type: "input",
+            name: "gitHubID",
+            message: "Your GitHub username:"
         },
         {
             type: "input",
@@ -77,7 +95,7 @@ inquirer
 
         ## Author
         ${answers.author}
-        - GitHub Email
+        - ${answers.gitHub}
         GitHub Profile Picture~!~
         
         ## Contributing

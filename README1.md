@@ -19,18 +19,18 @@
         `d`
 
         ## License
-        This project is  licensed.
+        This project is d licensed.
 
         ## Author
-        
-        - GitHub Email
+        d
+        - undefined
         GitHub Profile Picture~!~
         
         ## Contributing
-        
+        d
 
         ## Tests
-        
+        d
         
         ## Questions
-        
+        d
