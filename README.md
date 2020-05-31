@@ -13,10 +13,11 @@ I created a README generator which prompts the user for the information necessar
 - Questions
 
 ## Installation
-To install, enter the following: `npm i inquire` & `npm i axios`
+`npm i inquire`
+`npm i axios`
 
 ## Usage
-To run, enter the following: `node index.js`
+`node index.js`
 
 ## License
 This project is MIT licensed.
