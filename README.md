@@ -5,7 +5,7 @@ I created a README generator which prompts the user for the information necessar
         
 ## Table of Contents
         
-- [Installation](##installation)
+- [Installation](#installation)
 - Usage
 - License
 - Contributing
