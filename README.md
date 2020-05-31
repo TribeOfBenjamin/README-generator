@@ -6,11 +6,10 @@ I created a README generator which prompts the user for the information necessar
 ## Table of Contents
         
 - [Installation](#installation)
-- Usage
-- License
-- Contributing
-- Tests
-- Questions
+- [Usage](#usage)
+- [License](#license)
+- [Author](#author)
+- [Contributing](#contributing)
 
 ## Installation
 `npm i inquire`
