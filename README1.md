@@ -1,7 +1,7 @@
 ![GitHub followers](https://img.shields.io/github/followers/0?label=Follow&style=social)
         
-        # Net-Movies
-        This is going to be the next Netflex! Except different!
+        # Jumping Jacks
+        This counts how many jumping jacks you do.
         
         ## Table of Contents
         
@@ -13,22 +13,22 @@
         - Questions
             
         ## Installation
-        `npm i inquire`
+        `npm i jump`
 
         ## Usage
-        `None at this time.`
+        `n/a`
 
         ## License
         This project is MIT licensed.
 
         ## Author
-        Frank Harron
+        Jarod Jump
         
         ## Contributing
-        Please follow the Contributor's Covenant!
+        Nothing.
 
         ## Tests
-        Coming soon!
+        None at this time.
         
         ## Questions
-        Coming soon!
+        None.

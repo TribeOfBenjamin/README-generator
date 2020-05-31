@@ -77,12 +77,13 @@ inquirer
         
         ## Table of Contents
         
-        - Installation
-        - Usage
-        - License
-        - Contributing
-        - Tests
-        - Questions
+        - [Installation](#installation)
+        - [Usage](#usage)
+        - [License](#license)
+        - [Author](#author)
+        - [Contributing](#contributing)
+        - [Tests](#tests)
+        - [Questions](#questions)
             
         ## Installation
         \`${answers.installation}\`
