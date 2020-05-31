@@ -95,8 +95,6 @@ inquirer
 
         ## Author
         ${answers.author}
-        - ${answers.gitHub}
-        GitHub Profile Picture~!~
         
         ## Contributing
         ${answers.contributing}
