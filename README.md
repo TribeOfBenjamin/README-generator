@@ -18,7 +18,10 @@ I created a README generator which prompts the user for the information necessar
 
 ## Usage
 `node index.js`
+
 ![program running](assets/images/run.png)
+
+
 ![program result](assets/images/result.png)
 
 ## License
