@@ -2,6 +2,13 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const axios = require("axios");
 
+/*
+Questions for Daniel:
+1. "Application doesn't generate a README.md file from provided GitHub profile." What does this mean exactly?
+2. How do I get the GitHub API to work?
+3. Related to 2: How do I put the GitHub username from the prompt into the axios get request to get info from the right GitHub profile?
+*/
+
 //function gitHubEmail() {
 
 //    axios
@@ -69,51 +76,62 @@ inquirer
     ])
     .then(function(answers) {
 
-        const readMe = 
-        `![GitHub followers](https://img.shields.io/github/followers/0?label=Follow&style=social)
+        axios
+            .get("https://api.github.com/users/" + answers.gitHubID)
+            .then(function(result) {
+
+                const readMe = 
+                `![GitHub followers](https://img.shields.io/github/followers/0?label=Follow&style=social)
+                
+                # ${answers.title}
+                ${answers.description}
+                
+                ## Table of Contents
+                
+                - [Installation](#installation)
+                - [Usage](#usage)
+                - [License](#license)
+                - [Author](#author)
+                - [Contributing](#contributing)
+                - [Tests](#tests)
+                - [Questions](#questions)
+                    
+                ## Installation
+                \`${answers.installation}\`
         
-        # ${answers.title}
-        ${answers.description}
+                ## Usage
+                \`${answers.usage}\`
         
-        ## Table of Contents
+                ## License
+                This project is ${answers.license} licensed.
         
-        - [Installation](#installation)
-        - [Usage](#usage)
-        - [License](#license)
-        - [Author](#author)
-        - [Contributing](#contributing)
-        - [Tests](#tests)
-        - [Questions](#questions)
-            
-        ## Installation
-        \`${answers.installation}\`
-
-        ## Usage
-        \`${answers.usage}\`
-
-        ## License
-        This project is ${answers.license} licensed.
-
-        ## Author
-        ${answers.author}
+                ## Author
+                - ${answers.author}
+                - ${result.data.url}
+                
+                ## Contributing
+                ${answers.contributing}
         
-        ## Contributing
-        ${answers.contributing}
-
-        ## Tests
-        ${answers.tests}
+                ## Tests
+                ${answers.tests}
+                
+                ## Questions
+                ${answers.questions}`;
         
-        ## Questions
-        ${answers.questions}`;
+                fs.writeFile("README1.md", readMe, function(err) {
+        
+                    if (err) {
+                        return console.log(err);
+                    }
+        
+                    console.log("README.md successfully generated!")
+                })
+        
+                return console.log(readMe);
 
-        fs.writeFile("README1.md", readMe, function(err) {
+            }).catch(function(error) {
+                console.log(error);
+            });
 
-            if (err) {
-                return console.log(err);
-            }
 
-            console.log("README.md successfully generated!")
-        })
-
-        return console.log(readMe);
     });
