@@ -2,25 +2,6 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const axios = require("axios");
 
-/*
-Questions for Daniel:
-1. "Application doesn't generate a README.md file from provided GitHub profile." What does this mean exactly?
-2. How do I get the GitHub API to work?
-3. Related to 2: How do I put the GitHub username from the prompt into the axios get request to get info from the right GitHub profile?
-*/
-
-//function gitHubEmail() {
-
-//    axios
-//    .get("https://api.github.com/users/" + answers.gitHubID)
-//    .then(function(result) {
-
-//    console.log(result);
-//});
-//  }
-
-//gitHubEmail();
-
 inquirer
     .prompt([
         {
