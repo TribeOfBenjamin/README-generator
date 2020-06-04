@@ -81,42 +81,41 @@ inquirer
             .then(function(result) {
 
                 const readMe = 
-                `![GitHub followers](https://img.shields.io/github/followers/0?label=Follow&style=social)
+                `![GitHub followers](https://img.shields.io/github/followers/0?label=Follow&style=social) 
+\n# ${answers.title}
+\n${answers.description}
                 
-                # ${answers.title}
-                ${answers.description}
+\n## Table of Contents
                 
-                ## Table of Contents
-                
-                - [Installation](#installation)
-                - [Usage](#usage)
-                - [License](#license)
-                - [Author](#author)
-                - [Contributing](#contributing)
-                - [Tests](#tests)
-                - [Questions](#questions)
+\n- [Installation](#installation)
+\n- [Usage](#usage)
+\n- [License](#license)
+\n- [Author](#author)
+\n- [Contributing](#contributing)
+\n- [Tests](#tests)
+\n- [Questions](#questions)
                     
-                ## Installation
-                \`${answers.installation}\`
+\n## Installation
+\n\`${answers.installation}\`
         
                 ## Usage
-                \`${answers.usage}\`
+\n\`${answers.usage}\`
         
-                ## License
-                This project is ${answers.license} licensed.
+\n## License
+\nThis project is ${answers.license} licensed.
         
-                ## Author
-                - ${answers.author}
-                - ${result.data.url}
+\n## Author
+\n- ${answers.author}
+\n- ${result.data.url}
                 
-                ## Contributing
-                ${answers.contributing}
+\n## Contributing
+\n${answers.contributing}
         
-                ## Tests
-                ${answers.tests}
+\n## Tests
+\n${answers.tests}
                 
-                ## Questions
-                ${answers.questions}`;
+\n## Questions
+\n${answers.questions}`;
         
                 fs.writeFile("README1.md", readMe, function(err) {
         
@@ -128,6 +127,7 @@ inquirer
                 })
         
                 return console.log(readMe);
+
 
             }).catch(function(error) {
                 console.log(error);
