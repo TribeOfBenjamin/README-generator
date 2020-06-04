@@ -81,7 +81,7 @@ inquirer
             .then(function(result) {
 
                 const readMe = 
-                `![GitHub followers](https://img.shields.io/github/followers/0?label=Follow&style=social) 
+                `![GitHub followers](https://img.shields.io/github/followers/30?label=Follow&style=social) 
 \n# ${answers.title}
 \n${answers.description}
                 
@@ -98,7 +98,7 @@ inquirer
 \n## Installation
 \n\`${answers.installation}\`
         
-                ## Usage
+\n## Usage
 \n\`${answers.usage}\`
         
 \n## License
@@ -106,7 +106,9 @@ inquirer
         
 \n## Author
 \n- ${answers.author}
-\n- ${result.data.url}
+\n- ${result.data.email}
+
+\n![GitHub Profile Picture](${result.data.avatar_url})
                 
 \n## Contributing
 \n${answers.contributing}
